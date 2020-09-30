@@ -1,0 +1,53 @@
+
+<link href="izi.cookie.color.css" rel="stylesheet"> 
+<!-- izi cookie -->
+<div class="izicookies" style="display: none;">
+    <div class="izicookies-banner-container">
+        <div class="izicookies-banner-text">
+            <h2>Cookie Einstellungen</h2>
+            <p>Wir setzen Cookies ein, um Ihnen die Nutzung unserer Website und Angebote zu erleichtern und das Laden
+                von Inhalten zu beschleunigen.
+                <span class="izicookies-policy-link"><a href="/datenschutz.html">[mehr erfahren]</a></span>
+            </p>
+            <div class="izicookies-checkboxes">
+                <p><input class="izicookiecheck" disabled="disabled" type="checkbox" id="necessary" name="necessary"
+                        value='1' checked> <span class="lab">Notwendig</span> [<span class="showdet"
+                        onclick="showdetail('notwendig');" det-target="notwendig">Details</span>]&nbsp;&nbsp;</p>
+
+                <p><input class="izicookiecheck" type="checkbox" id="functionality" name="functionality" value='1'
+                        checked> <span class="lab">Funktion</span> [<span class="showdet"
+                        onclick="showdetail('funktion');" det-target="funktion">Details</span>]&nbsp;&nbsp;</p>
+                <p><input class="izicookiecheck" type="checkbox" id="tracking" name="tracking" value='1'> <span
+                        class="lab">Statistik</span> [<span class="showdet" onclick="showdetail('track');"
+                        det-target="track">Details</span>]</p>
+            </div>
+            <div class="izicookies-details">
+                <div class="cookieDetail" style="display: none;" id="notwendig">Technisch erforderliche Cookies
+                    ermöglichen die Navigation auf unseren Websites. Sie sorgen dafür, dass Sie unsere Websites ansehen
+                    und in unseren Angeboten navigieren können, von der Ansicht über die Auswahl bis zum Warenkorb.
+                    Grundfunktionen, wie die Darstellung und Auswahl von Produkten auf unseren Websites, das Befüllen
+                    des Warenkorbs oder der Login sind ohne sie nicht möglich.</div>
+                <div class="cookieDetail" style="display: none;" id="funktion">Zur Darstellung von zb Maps erforderliche
+                    Cookies.</div>
+                <div class="cookieDetail" style="display: none;" id="track">Wir setzen Cookies zu statistischen Zwecken
+                    ein, um Ihr Nutzerverhalten besser zu verstehen und Sie bei Ihrer Navigation auf unseren
+                    Angebotsseiten zu unterstützen. Damit ist es uns zudem möglich, Ihre Navigation auf unseren
+                    Angebotsseiten zu erfassen und für die bedarfsgerechte Gestaltung unserer Services zu nutzen</div>
+            </div>
+            <div style="margin-top: 20px;"><a href="/impressum.html">Impressum</a> | <a
+                    href="/datenschutz.html">Datenschutzerklärung</a></div>
+        </div>
+
+        <div class="izicookies-accept-button-container">
+            <p class="izicookies-accept-button-text">ich stimme zu</p>
+        </div>
+        <div class="izicookies-checkall-button-container">
+            <p class="izicookies-checkall-button-text">alle auswählen</p>
+        </div>
+
+    </div>
+</div>
+<script izi-cookie-consent="necessary" src="izi.cookie.js"></script> 
+<!--
+    <p class="izicookies-reset">Cookie-Einstellungen bearbeiten</p>
+-->
