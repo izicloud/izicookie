@@ -3,7 +3,7 @@
  * @version 2.0 [September 30, 2020]
  * @author izicloud.ch
  * @copyright Copyright 2020 izicloud.ch [hello at izicloud.ch]
- * @fileoverview iziCookie ist ein Script für die Verwendung von Cookies gemäss <tt>DSGVO</tt>.
+ * @fileoverview iziCookie ist ein Script für die Information zur Verwendung von Cookies gemäss <tt>DSGVO</tt>.
  *  <p>
  *  Die Richtlinien des European Data Protection Board (EDPB) (Europäischer Datenschutzausschuss) vom Mai 2020 stellen klar, 
  *  was eine gültige Zustimmung auf Websites in Übereinstimmung mit der DSGVO ist.
