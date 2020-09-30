@@ -1,6 +1,7 @@
 # izicookie
 iziCookie ist ein Script für die Information zur Verwendung von Cookies gemäss DSGVO
 
+![Screenshot](https://izicloud.ch/media/izicookie_screenshot.png)
 
 # Installation
 CSS und JS Files in allen Webseiten einlesen, auf welchen die Cookie Information angezeigt werden soll.
