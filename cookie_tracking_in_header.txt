@@ -1,0 +1,77 @@
+
+
+<!-- 
+kommt in den Head-Bereich der Seite 
+lädt Analytics nur, falls es der Besucher akzeptiert
+
+-->
+
+<script>
+<!-- Google Tag Manager --> 
+function getTrackingCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i].trim(); // Use trim() instead of the while loop
+        if (c.indexOf(name) === 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+
+function initializeEtracker() {
+ const etrackerScript1 = document.createElement('script');
+        etrackerScript1.type = 'text/javascript';
+        etrackerScript1.nonce = '2RmQNjiyPc4YYutNKMSeYg==';
+        etrackerScript1.textContent = 'var _etrackerOnReady=[];var et_pagename="Startseite";';
+        document.head.appendChild(etrackerScript1);
+
+        // Dynamically add the second script
+        const etrackerScript2 = document.createElement('script');
+        etrackerScript2.type = 'text/javascript';
+        etrackerScript2.charset = 'UTF-8';
+        etrackerScript2.id = '_etLoader';
+        etrackerScript2.dataset.blockCookies = 'true';
+        etrackerScript2.dataset.secureCode = '0TmBuV';
+        etrackerScript2.src = 'https://code.etracker.com/code/e.js';
+        etrackerScript2.async = true;
+        document.head.appendChild(etrackerScript2);
+
+}
+
+
+
+function initializeGoogleAnalytics() {
+    console.log('tracking: GO');
+    
+    // Create and load the gtag script
+    const gtagScript = document.createElement('script');
+    gtagScript.async = true;
+    gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-Z8X4YGPTVH';
+    
+    // Initialize gtag after script loads
+    gtagScript.onload = function() {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Z8X4YGPTVH');
+    };
+    
+    document.head.appendChild(gtagScript);
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const allowTracking = getTrackingCookie("allowTracking");
+    
+    if(allowTracking === '1') {
+    	
+    	initializeGoogleAnalytics();
+    	
+    } else {
+        console.log('tracking: No Tracking');
+    }
+});
+</script>
